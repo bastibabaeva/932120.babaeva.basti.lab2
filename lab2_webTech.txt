@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website</title>
+  <style type="text/css">
+  .block1 {
+    padding: 200px;
+    text-align: center;
+    background-color: #008001; 
+    color: #ffffff; 
+    font-family: Courier New;
+	}
+
+	<body>
+	    <section style="block1">CSS Liquid Layout#2.1-(Fixed-Fluid)</section>
+</body>
+</style>
+</head>
