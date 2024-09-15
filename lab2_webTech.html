@@ -7,9 +7,9 @@
     #topLayout {
      position: absolute; /* Абсолютное позиционирование */
      left: 0; /* Положение левого края */
+     right: 0;
      top: 0; /* Положение верхнего края */
      height: 80px;
-     width: 1536px; /* Ширина слоя */
      background: #EAEAEA; /* Цвет фона */
      color: black; /* Цвет текста */
      font-size: 150%;
@@ -18,15 +18,25 @@
      position: absolute; /* Абсолютное позиционирование */
      left: 0; /* Положение левого края */
      top: 80px; /* Положение верхнего края */
+     width: 25%;
+     background: #C8FC98; /* Цвет фона */
+     color: black; /* Цвет текста */
+     font-size: 100%;
+    }
+    #rightcol {
+     position: absolute; /* Абсолютное позиционирование */
+     right: 0px; /* Положение левого края */
+     top: 80px; /* Положение верхнего края */
      height: 630px;
      width: 200px; /* Ширина слоя */
-     background: #C8FC98; /* Цвет фона */
+     background-color: #FFFF80; /* Цвет фона */
      color: black; /* Цвет текста */
      font-size: 100%;
     }
     #content{
     position: absolute;
-    left:205px;
+    left:25%;
+    right: 205px;
     top:80px;
     color: black;
     font-size:100%;
@@ -34,10 +44,10 @@
     .footer {
     position: absolute;
     padding: 5px;
-    height: 20px;
-    width: 1536px;
-    top: 700px;
+    height: 40px;
+    bottom: 0px;
     left: 0px;
+    right: 0px;
     text-align: center;
     background-color: black; 
     font-size: 90%;
@@ -47,8 +57,35 @@
 
   <body>
    <div id="topLayout"><b>CSS Liquid Layout #2.1-(Fixed-Fluid)</b></div>
-   <div id="leftcol"><b>Left Column:<i style="color: red"> 200px</i></b>
+   <div id="leftcol"><b>Left Column:<i style="color: red"> 25%</i></b>
 
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis libero lacinia,
+      dictum nulla quis, lobortis turpis. Quisque auctor porta convallis. Proin vulputate placerat
+      lectus et imperdiet. Donec pulvinar tempor posuere. Fusce nibh dolor, ornare vel egestas in,
+      condimentum vel mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur 
+      ridiculus mus. Etiam ac eleifend dui. Praesent malesuada sagittis odio vitae gravida. Donec 
+      sodales diam turpis, sed blandit ante bibendum sed. Vestibulum feugiat lectus a felis 
+      porttitor, id cursus purus ultricies. Nulla molestie pulvinar ipsum, eget fermentum urna 
+      ullamcorper non. In lacinia nisi at elit efficitur, ut congue nulla tempus. Donec et urna 
+      varius, efficitur felis at, blandit elit. Pellentesque habitant morbi tristique senectus et 
+      netus et malesuada fames ac turpis egestas. Proin quis convallis nibh, eget interdum turpis.
+   </div>
+
+   <div id="content"><b>Content Column:<i style="color: red"> Fluid</i></b>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis libero lacinia,
+      dictum nulla quis, lobortis turpis. Quisque auctor porta convallis. Proin vulputate placerat
+      lectus et imperdiet. Donec pulvinar tempor posuere. Fusce nibh dolor, ornare vel egestas in,
+      condimentum vel mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur 
+      ridiculus mus. Etiam ac eleifend dui. Praesent malesuada sagittis odio vitae gravida. Donec 
+      sodales diam turpis, sed blandit ante bibendum sed. Vestibulum feugiat lectus a felis 
+      porttitor, id cursus purus ultricies. Nulla molestie pulvinar ipsum, eget fermentum urna 
+      ullamcorper non. In lacinia nisi at elit efficitur, ut congue nulla tempus. Donec et urna 
+      varius, efficitur felis at, blandit elit. Pellentesque habitant morbi tristique senectus et 
+      netus et malesuada fames ac turpis egestas. Proin quis convallis nibh, eget interdum turpis. 
+   </div>
+
+   <div id="rightcol"; text="left: 2px"><b>Right Column:<i style="color: red"> 200px</i></b>
+    
    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis libero lacinia,
       dictum nulla quis, lobortis turpis. Quisque auctor porta convallis. Proin vulputate placerat
       lectus et imperdiet. Donec pulvinar tempor posuere. Fusce nibh dolor, ornare vel egestas in,
@@ -60,20 +97,7 @@
       varius, efficitur felis at, blandit elit. Pellentesque habitant morbi tristique senectus et 
       netus et malesuada fames ac turpis egestas. Proin quis convallis nibh, eget interdum turpis.
    </br></div>
- 
-   <div id="content"><b>Content Column:<i style="color: red"> Fluid</i></b>
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis libero lacinia,
-      dictum nulla quis, lobortis turpis. Quisque auctor porta convallis. Proin vulputate placerat
-      lectus et imperdiet. Donec pulvinar tempor posuere. Fusce nibh dolor, ornare vel egestas in,
-      condimentum vel mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur 
-      ridiculus mus. Etiam ac eleifend dui. Praesent malesuada sagittis odio vitae gravida. Donec 
-      sodales diam turpis, sed blandit ante bibendum sed. Vestibulum feugiat lectus a felis 
-      porttitor, id cursus purus ultricies. Nulla molestie pulvinar ipsum, eget fermentum urna 
-      ullamcorper non. In lacinia nisi at elit efficitur, ut congue nulla tempus. Donec et urna 
-      varius, efficitur felis at, blandit elit. Pellentesque habitant morbi tristique senectus et 
-      netus et malesuada fames ac turpis egestas. Proin quis convallis nibh, eget interdum turpis. 
-   </div>
-    
+
    <div class="footer"> 
     <center>	
       <a style="color: yellow" href=https://tsu.ru/><u> www.csd.tsu.ru </u></a>
