@@ -18,7 +18,7 @@
      position: absolute; /* Абсолютное позиционирование */
      left: 0; /* Положение левого края */
      top: 80px; /* Положение верхнего края */
-     height: 650px;
+     height: 630px;
      width: 200px; /* Ширина слоя */
      background: #C8FC98; /* Цвет фона */
      color: black; /* Цвет текста */
@@ -31,14 +31,16 @@
     color: black;
     font-size:100%;
     }
-    #footerLayout{
-    padding: 10px;
-    weight: 153px;
-    top: 650px;
-    left:0px;
-    color: yellow;
-    font-size:100%;
-    background-color: black;
+    .footer {
+    position: absolute;
+    padding: 5px;
+    height: 20px;
+    width: 1536px;
+    top: 700px;
+    left: 0px;
+    text-align: center;
+    background-color: black; 
+    font-size: 90%;
     }
    </style>
   </head>
@@ -72,10 +74,9 @@
       netus et malesuada fames ac turpis egestas. Proin quis convallis nibh, eget interdum turpis. 
    </div>
     
-    <footer id="footerLayout">
-      <center>	
-        <a href=https://tsu.ru/> <u>www.tsu.ru </u></a>
-       </center>
-    </footer>
+   <div class="footer"> 
+    <center>	
+      <a style="color: yellow" href=https://tsu.ru/><u> www.csd.tsu.ru </u></a>
+    </center></div> 
 </body>
 </html>
