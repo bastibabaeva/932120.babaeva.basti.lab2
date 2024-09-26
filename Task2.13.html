@@ -2,63 +2,66 @@
  <html>
   <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <title>Позиционирование</title>
+   <title>Task2.13</title>
    <style type="text/css"> 
     
     .block{
-    height: 500px;
+    display: flex;
     background: aqua;
     color: black;   
     border: 2px solid green;
     
 }
    .block1{
-   position: absolute;
-   width: 265px;
-   height: 80px;
+   flex: auto 0 0;
+   width: 290px;
+   height: fit-content;
    background: bisque;
    color: black;
-   font-size: 90%
+   font-size: 90%;
 }
   
-   .block3{
-   position: absolute;
-   left: 280px;
-   right: 15px;
-   height: 500px;
-   background: darkgrey;
-   font-size: 85%;
+   .block2{
+   display: inline-block;
+   background-color: darkgrey;
+   font-size: 95%;
 }
    .textbelow{
    clear:both;
+   margin: 0px;
 }
-
+   p{
+   margin: 0px;
+}
+   
 </style>
 </head>
 
 <body>
 <div class="block">
 
-<div class="block1">
- <ul>
-  <li>Home</li>
-  <li>Hours</li>
-  <li>Direction</li> 
-</div>
+    <div class="block1">
+ 	<ul>
+  	   <li>Home</li>
+  	   <li>Hours</li>
+  	   <li>Direction</li> 
+  	</ul>
+     </div>
  
-<div class="block3">
+<div class="block2">
 
-    <div class="photo"><img src="image.jpg" align="right" width=430px height=350px></div>
-   
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis libero lacinia, dictum nulla quis, lobortis turpis. Quisque auctor porta convallis. Proin vulputate placerat lectus et imperdiet. Donec pulvinar tempor posuere. Fusce nibh dolor, ornare vel egestas in, condimentum vel mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ac eleifend dui. Praesent malesuada sagittis odio vitae gravida. Donec sodales diam turpis, sed blandit ante bibendum sed. Vestibulum feugiat lectus a felis porttitor, id cursus purus ultricies. Nulla molestie pulvinar ipsum, eget fermentum urna ullamcorper non. In lacinia nisi at elit efficitur, ut congue nulla tempus. Donec et urna varius, efficitur felis at, blandit elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin quis convallis nibh, eget interdum turpis. 
+    <div class="photo"><img src="image.jpg" align="right" width="430px" auto height=370px>
+       <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis libero lacinia, dictum nulla quis, lobortis turpis. Quisque auctor porta convallis. Proin vulputate placerat lectus et imperdiet. Donec pulvinar tempor posuere. Fusce nibh dolor, ornare vel egestas in, condimentum vel mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ac eleifend dui. Praesent malesuada sagittis odio vitae gravida. Donec sodales diam turpis, sed blandit ante bibendum sed. Vestibulum feugiat lectus a felis porttitor, id cursus purus ultricies. Nulla molestie pulvinar ipsum, eget fermentum urna ullamcorper non. In lacinia nisi at elit efficitur, ut congue nulla tempus. Donec et urna varius, efficitur felis at, blandit elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin quis convallis nibh, eget interdum turpis. 
+       </p>
 
-<div class=textbelow>
-<p height="350px">
-<br>Maecenas malesuada erat dictum felis ornare, id egestas augue mattis. Vivamus neque sapien, blandit nec accumsan in, lobortis faucibus quam. Cras porttitor, felis id consequat rhoncus, ipsum nunc pellentesque elit, quis rhoncus tortor ipsum blandit enim. Etiam ullamcorper turpis sit amet lectus bibendum, vel maximus ante bibendum. Pellentesque aliquet nisl ut dignissim malesuada. Morbi ac posuere nunc. Donec vitae pellentesque lectus. Sed sit amet purus pellentesque, maximus lorem nec, egestas massa. Fusce tempus sem non nunc finibus, ultrices sollicitudin mi porttitor. Ut sed justo nisl. Sed vel metus urna. Suspendisse semper diam vel pharetra hendrerit. Nulla ut justo elit. Aliquam pellentesque varius venenatis. Proin eu diam sed magna congue vehicula. Praesent eu enim ut ante vulputate posuere in quis enim. Integer ultrices augue rhoncus turpis pulvinar posuere.
-<br>Maecenas malesuada erat dictum felis ornare, id egestas augue mattis. Vivamus neque sapien, blandit nec accumsan in, lobortis faucibus quam. Cras porttitor, felis id consequat rhoncus, ipsum nunc pellentesque elit, quis rhoncus tortor ipsum blandit enim. Etiam ullamcorper turpis sit amet lectus bibendum, vel maximus ante bibendum. Pellentesque aliquet nisl ut dignissim malesuada. Morbi ac posuere nunc. Donec vitae pellentesque lectus. Sed sit amet purus pellentesque, maximus lorem nec, egestas massa. Fusce tempus sem non nunc finibus, ultrices sollicitudin mi porttitor. Ut sed justo nisl. Sed vel metus urna. Suspendisse semper diam vel pharetra hendrerit. Nulla ut justo elit. Aliquam pellentesque varius venenatis. Proin eu diam sed magna congue vehicula. Praesent eu enim ut ante vulputate posuere in quis enim. Integer ultrices augue rhoncus turpis pulvinar posuere.</br>
-</p>
-</div>
-</div>
+    <div class=textbelow>
+      <p>
+        Maecenas malesuada erat dictum felis ornare, id egestas augue mattis. Vivamus neque sapien, blandit nec accumsan in, lobortis faucibus quam. Cras porttitor, felis id consequat rhoncus, ipsum nunc pellentesque elit, quis rhoncus tortor ipsum blandit enim. Etiam ullamcorper turpis sit amet lectus bibendum, vel maximus ante bibendum. Pellentesque aliquet nisl ut dignissim malesuada. Morbi ac posuere nunc. Donec vitae pellentesque lectus. Sed sit amet purus pellentesque, maximus lorem nec, egestas massa. Fusce tempus sem non nunc finibus, ultrices sollicitudin mi porttitor. Ut sed justo nisl. Sed vel metus urna. Suspendisse semper diam vel pharetra hendrerit. Nulla ut justo elit. Aliquam pellentesque varius venenatis. Proin eu diam sed magna congue vehicula. Praesent eu enim ut ante vulputate posuere in quis enim. Integer ultrices augue rhoncus turpis pulvinar posuere.
+	<br>Maecenas malesuada erat dictum felis ornare, id egestas augue mattis. Vivamus neque sapien, blandit nec accumsan in, lobortis faucibus quam. Cras porttitor, felis id consequat rhoncus, ipsum nunc pellentesque elit, quis rhoncus tortor ipsum blandit enim. Etiam ullamcorper turpis sit amet lectus bibendum, vel maximus ante bibendum. Pellentesque aliquet nisl ut dignissim malesuada. Morbi ac posuere nunc. Donec vitae pellentesque lectus. Sed sit amet purus pellentesque, maximus lorem nec, egestas massa. Fusce tempus sem non nunc finibus, ultrices sollicitudin mi porttitor. Ut sed justo nisl. Sed vel metus urna. Suspendisse semper diam vel pharetra hendrerit. Nulla ut justo elit. Aliquam pellentesque varius venenatis. Proin eu diam sed magna congue vehicula. Praesent eu enim ut ante vulputate posuere in quis enim. Integer ultrices augue rhoncus turpis pulvinar posuere.</br>
+      </p>
+   </div>
+   </div>
 
 </div>
 </div>
